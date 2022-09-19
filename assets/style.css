@@ -1,0 +1,230 @@
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url(images/tile.jpg);
+  background-repeat: repeat;
+}
+
+h1 {
+  font-family: 'Hind Madurai', sans-serif;
+  font-size: large;
+  font-weight: 600;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+#second_section {
+  margin-bottom: 60px;
+}
+
+.div_form_container {
+  height: 372px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  padding-top: 2px;
+}
+
+.form_container {
+  background-image: url(images/formbg.jpg);
+  background-position: center;
+  background-repeat: repeat-y;
+  height: 88%;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  align-items: center;
+  width: 50%;
+  padding-left: 11px;
+  justify-content: space-between;
+  margin-top: -46px;
+}
+
+.textarea_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  line-height: 0.89cm;
+  padding-left: 57px;
+  padding-top: 8px;
+}
+
+textarea {
+  background: none;
+  border-color: transparent;
+  resize: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 300px;
+}
+
+.form_buttons_time_and_date {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  margin-top: 31px;
+  width: 538px;
+}
+
+#third_article {
+  margin-top: 20px;
+}
+
+.div_flex_container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+  row-gap: 10px;
+  align-items: center;
+}
+
+.image_background_container_with_animation {
+  background-image: url(images/notebg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 400px;
+  animation: fade_in_for_note 1s 1 linear alternate both;
+}
+
+.image_background_container_without_animation {
+  background-image: url(images/notebg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 400px;
+}
+
+@keyframes fade_in_for_note {
+  0% {
+    opacity: 0;
+    transform: scale3d(.75, .75, 1);
+  }
+
+  70% {
+    opacity: 0;
+    transform: scale3d(.75, .75, 1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.note_content_container {
+  width: 100%;
+  height: 491px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+}
+
+.note_content_container .input_type_image_button {
+  display: none;
+}
+
+.note_content_container:hover .input_type_image_button {
+  position: absolute;
+  top: 34px;
+  right: 47px;
+  display: block;
+  background-color: transparent;
+  font-size: 30px;
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 700px) {
+  .div_flex_container {
+    flex-direction: row;
+  }
+}
+
+.div_for_text_in_note {
+  height: 301px;
+  width: 345px;
+  margin-top: 41px;
+  margin-bottom: 0px;
+  padding-left: 12px;
+  justify-content: space-evenly;
+  overflow-y: scroll;
+  overflow: auto;
+  margin-left: 7px;
+}
+
+.div_for_time_and_date_in_note {
+  margin-top: 5px;
+  padding-left: 16px;
+  font-size: medium;
+  font-weight: 500;
+}
+
+.class_for_error_validation {
+  background-color: red;
+  border-color: red;
+}
+
+.draggable {
+  border: none;
+  cursor: move;
+}
+
+
+.invisible {
+  display: none;
+  background-color: transparent;
+}
+
+.hover_effect {
+  border: dashed 2px rgb(0, 0, 0);
+}
+
+.container_of_countdown {
+  position: relative;
+  top: 30px;
+  left: 22px;
+  width: 166px;
+}
+
+.countdown_header_container {
+  position: absolute;
+  top: -40px;
+  left: -74px;
+  left: 33px;
+  font-size: 17px;
+}
+
+.countdown_header {
+  font-size: 17px;
+}
+
+.countdown {
+  position: absolute;
+  top: 15px;
+  left: -19px;
+  font-weight: 500;
+  margin-left: 8px;
+  margin-top: -35px;
+  font-size: 18px;
+  width: 143px;
+}
